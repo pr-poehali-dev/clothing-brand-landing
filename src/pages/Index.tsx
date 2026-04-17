@@ -68,7 +68,7 @@ export default function Index() {
             className="font-cormorant text-2xl tracking-[0.3em] font-light"
             style={{ color: "var(--gold)" }}
           >
-            MAISON
+            FINISTA
           </a>
 
           <div className="hidden md:flex items-center gap-10">
@@ -134,7 +134,7 @@ export default function Index() {
             className="font-cormorant text-7xl md:text-9xl font-light tracking-[0.12em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
             style={{ color: "var(--cream)", animationFillMode: "forwards" }}
           >
-            MAISON
+            FINISTA
           </h1>
           <div
             className="gold-line mx-auto mb-6 animate-fade-in opacity-0 delay-400"
@@ -396,9 +396,9 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ borderTop: "1px solid rgba(201,168,76,0.12)" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-cormorant text-xl tracking-[0.3em]" style={{ color: "var(--gold)" }}>MAISON</p>
+          <p className="font-cormorant text-xl tracking-[0.3em]" style={{ color: "var(--gold)" }}>FINISTA</p>
           <p className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: "rgba(240,234,214,0.3)" }}>
-            © 2025 MAISON. Все права защищены.
+            © 2025 FINISTA. Все права защищены.
           </p>
           <div className="flex gap-6">
             {["Instagram", "Telegram"].map((social) => (
