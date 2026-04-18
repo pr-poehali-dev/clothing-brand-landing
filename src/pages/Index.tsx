@@ -6,14 +6,15 @@ const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5
 const GALLERY_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/0c05be5c-027e-4813-b692-505f9f5e407b.jpg";
 
 const NAV_ITEMS = [
-  { label: "Главная", href: "#home" },
   { label: "О бренде", href: "#about" },
-  { label: "Галерея", href: "#gallery" },
+  { label: "Каталог изделий", href: "#catalog" },
+  { label: "Каталог тканей", href: "#fabrics" },
+  { label: "Упаковка", href: "#packaging" },
   { label: "Доставка", href: "#delivery" },
-  { label: "Контакты", href: "#contacts" },
+  { label: "Связь и контакты", href: "#contacts" },
 ];
 
-const GALLERY_ITEMS = [
+const CATALOG_ITEMS = [
   { id: 1, src: HERO_IMAGE, title: "Осенняя коллекция", year: "2024" },
   { id: 2, src: ABOUT_IMAGE, title: "Вечерние образы", year: "2024" },
   { id: 3, src: GALLERY_IMAGE, title: "Классическая линия", year: "2024" },
@@ -22,15 +23,24 @@ const GALLERY_ITEMS = [
   { id: 6, src: ABOUT_IMAGE, title: "Зимний показ", year: "2025" },
 ];
 
+const FABRICS = [
+  { name: "Кашемир Лоро Пиана", origin: "Италия", weight: "280 г/м²", color: "#c8bfa8" },
+  { name: "Шёлк Dupioni", origin: "Франция", weight: "120 г/м²", color: "#d4c5a9" },
+  { name: "Шерсть Zegna", origin: "Италия", weight: "320 г/м²", color: "#8a7d6b" },
+  { name: "Органза", origin: "Япония", weight: "60 г/м²", color: "#ede8de" },
+  { name: "Бархат", origin: "Франция", weight: "400 г/м²", color: "#4a3f35" },
+  { name: "Лён премиум", origin: "Бельгия", weight: "200 г/м²", color: "#c2b99a" },
+];
+
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 60);
-      const sections = ["home", "about", "gallery", "delivery", "contacts"];
+      const sections = ["about", "catalog", "fabrics", "packaging", "delivery", "contacts"];
       for (const id of [...sections].reverse()) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 120) {
@@ -63,15 +73,15 @@ export default function Index() {
       >
         <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
           <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); scrollTo("#home"); }}
+            href="#about"
+            onClick={(e) => { e.preventDefault(); scrollTo("#about"); }}
             className="font-cormorant text-2xl tracking-[0.3em] font-light"
             style={{ color: "var(--gold)" }}
           >
             FINISTA
           </a>
 
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-8">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
@@ -86,7 +96,7 @@ export default function Index() {
           </div>
 
           <button
-            className="md:hidden"
+            className="lg:hidden"
             style={{ color: "var(--gold)" }}
             onClick={() => setMenuOpen(!menuOpen)}
           >
@@ -96,7 +106,7 @@ export default function Index() {
 
         {menuOpen && (
           <div
-            className="md:hidden px-8 pb-6 flex flex-col gap-5"
+            className="lg:hidden px-8 pb-6 flex flex-col gap-5"
             style={{ backgroundColor: "rgba(13,11,8,0.98)", borderTop: "1px solid rgba(201,168,76,0.1)" }}
           >
             {NAV_ITEMS.map((item) => (
@@ -114,7 +124,7 @@ export default function Index() {
       </nav>
 
       {/* HERO */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${HERO_IMAGE})` }}
@@ -147,8 +157,8 @@ export default function Index() {
             Искусство быть безупречным
           </p>
           <div className="mt-12 animate-fade-in-up opacity-0 delay-700" style={{ animationFillMode: "forwards" }}>
-            <button className="btn-gold" onClick={() => scrollTo("#gallery")}>
-              <span>Смотреть коллекцию</span>
+            <button className="btn-gold" onClick={() => scrollTo("#catalog")}>
+              <span>Смотреть каталог</span>
             </button>
           </div>
         </div>
@@ -162,7 +172,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* 1. О БРЕНДЕ */}
       <section id="about" className="py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -173,7 +183,7 @@ export default function Index() {
               />
               <img
                 src={ABOUT_IMAGE}
-                alt="О бренде MAISON"
+                alt="О бренде FINISTA"
                 className="w-full h-[600px] object-cover relative z-10"
               />
               <div
@@ -195,7 +205,7 @@ export default function Index() {
               </h2>
               <div className="gold-line mb-8" />
               <p className="font-montserrat text-sm leading-relaxed mb-6" style={{ color: "rgba(240,234,214,0.7)", fontWeight: 300 }}>
-                MAISON — это больше, чем одежда. Это философия утончённости, воплощённая в каждом стежке. Мы создаём вещи для тех, кто ценит подлинное качество и не нуждается в том, чтобы об этом громко говорить.
+                FINISTA — это больше, чем одежда. Это философия утончённости, воплощённая в каждом стежке. Мы создаём вещи для тех, кто ценит подлинное качество и не нуждается в том, чтобы об этом громко говорить.
               </p>
               <p className="font-montserrat text-sm leading-relaxed mb-10" style={{ color: "rgba(240,234,214,0.7)", fontWeight: 300 }}>
                 Ателье основано в 2018 году в Москве. Каждый предмет создаётся вручную из тканей премиальных европейских домов. Тираж ограничен.
@@ -214,12 +224,12 @@ export default function Index() {
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section id="gallery" className="py-24 px-6" style={{ backgroundColor: "var(--warm-dark)" }}>
+      {/* 2. КАТАЛОГ ИЗДЕЛИЙ */}
+      <section id="catalog" className="py-24 px-6" style={{ backgroundColor: "var(--warm-dark)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
-              Галерея
+              Каталог изделий
             </p>
             <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--cream)" }}>
               Коллекции
@@ -228,7 +238,7 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {GALLERY_ITEMS.map((item, index) => (
+            {CATALOG_ITEMS.map((item, index) => (
               <div
                 key={item.id}
                 className="gallery-item cursor-pointer"
@@ -253,7 +263,99 @@ export default function Index() {
         </div>
       </section>
 
-      {/* DELIVERY */}
+      {/* 3. КАТАЛОГ ТКАНЕЙ */}
+      <section id="fabrics" className="py-32 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
+              Каталог тканей
+            </p>
+            <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--cream)" }}>
+              Материалы
+            </h2>
+            <div className="gold-line mx-auto mt-6 mb-6" />
+            <p className="font-montserrat text-sm leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(240,234,214,0.6)", fontWeight: 300 }}>
+              Работаем только с проверенными европейскими поставщиками премиального сырья
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(201,168,76,0.1)" }}>
+            {FABRICS.map((fabric) => (
+              <div
+                key={fabric.name}
+                className="flex items-center gap-6 p-8 group transition-colors duration-300"
+                style={{ backgroundColor: "var(--warm-dark)" }}
+              >
+                <div
+                  className="w-14 h-14 flex-shrink-0 border"
+                  style={{ backgroundColor: fabric.color, borderColor: "rgba(201,168,76,0.2)" }}
+                />
+                <div>
+                  <p className="font-cormorant text-lg font-light mb-1" style={{ color: "var(--cream)" }}>{fabric.name}</p>
+                  <p className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase mb-1" style={{ color: "var(--gold)" }}>{fabric.origin}</p>
+                  <p className="font-montserrat text-[0.6rem]" style={{ color: "rgba(240,234,214,0.4)" }}>{fabric.weight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="font-montserrat text-xs leading-relaxed" style={{ color: "rgba(240,234,214,0.5)", fontWeight: 300 }}>
+              Полный каталог тканей доступен при персональной консультации · 47 позиций в ассортименте
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. УПАКОВКА */}
+      <section id="packaging" className="py-32 px-6" style={{ backgroundColor: "var(--warm-dark)" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
+              Упаковка
+            </p>
+            <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--cream)" }}>
+              Первое впечатление
+            </h2>
+            <div className="gold-line mx-auto mt-6 mb-6" />
+            <p className="font-montserrat text-sm leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(240,234,214,0.6)", fontWeight: 300 }}>
+              Упаковка — это часть изделия. Мы уделяем ей столько же внимания, сколько каждому стежку
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <img
+              src={GALLERY_IMAGE}
+              alt="Упаковка FINISTA"
+              className="w-full h-[480px] object-cover"
+              style={{ border: "1px solid rgba(201,168,76,0.15)" }}
+            />
+            <div className="flex flex-col gap-10">
+              {[
+                { icon: "Box", title: "Фирменная коробка", desc: "Жёсткий картон с тиснением логотипа золотом. Закрывается на магнитный замок." },
+                { icon: "Feather", title: "Шёлковая бумага", desc: "Каждое изделие бережно обёрнуто в шёлковую бумагу с ароматом бренда." },
+                { icon: "Stamp", title: "Восковая печать", desc: "Личная печать мастера — знак подлинности и ручного исполнения." },
+                { icon: "Gift", title: "Готово к подарку", desc: "Упаковка не требует дополнительного оформления — идеальна с первой секунды." },
+              ].map((item) => (
+                <div key={item.title} className="flex items-start gap-6">
+                  <div
+                    className="w-10 h-10 flex-shrink-0 flex items-center justify-center border"
+                    style={{ borderColor: "rgba(201,168,76,0.3)" }}
+                  >
+                    <Icon name={item.icon} fallback="Package" size={16} />
+                  </div>
+                  <div>
+                    <h3 className="font-cormorant text-xl font-light mb-2" style={{ color: "var(--cream)" }}>{item.title}</h3>
+                    <p className="font-montserrat text-xs leading-relaxed" style={{ color: "rgba(240,234,214,0.55)", fontWeight: 300 }}>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. ДОСТАВКА */}
       <section id="delivery" className="py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -272,14 +374,14 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(201,168,76,0.1)" }}>
             {[
               {
-                icon: "Package",
-                title: "Премиальная упаковка",
-                desc: "Фирменная коробка, шёлковая бумага, восковая печать. Готово к подарку с первой секунды.",
+                icon: "Truck",
+                title: "Доставка по Москве",
+                desc: "Курьерская доставка по Москве — от 24 часов. Передаём изделие лично в руки.",
               },
               {
-                icon: "Truck",
-                title: "Доставка по России",
-                desc: "Курьерская доставка по Москве — от 24 часов. По всей России — 2–5 рабочих дней.",
+                icon: "Map",
+                title: "По всей России",
+                desc: "Доставка по всей России за 2–5 рабочих дней. Трек-номер на каждый заказ.",
               },
               {
                 icon: "Globe",
@@ -296,7 +398,7 @@ export default function Index() {
                   className="w-14 h-14 flex items-center justify-center mb-6 border"
                   style={{ borderColor: "rgba(201,168,76,0.3)" }}
                 >
-                  <Icon name={card.icon} fallback="Package" size={22} className="text-gold" />
+                  <Icon name={card.icon} fallback="Truck" size={22} />
                 </div>
                 <h3 className="font-cormorant text-xl font-light mb-4" style={{ color: "var(--cream)" }}>
                   {card.title}
@@ -310,11 +412,11 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CONTACTS */}
+      {/* 6. СВЯЗЬ И КОНТАКТЫ */}
       <section id="contacts" className="py-32 px-6" style={{ backgroundColor: "var(--warm-dark)" }}>
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
-            Контакты
+            Связь и контакты
           </p>
           <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-4" style={{ color: "var(--cream)" }}>
             Свяжитесь с нами
@@ -326,7 +428,7 @@ export default function Index() {
 
           <div className="grid md:grid-cols-3 gap-10 mb-16">
             {[
-              { icon: "Mail", label: "Почта", value: "hello@maison.ru" },
+              { icon: "Mail", label: "Почта", value: "hello@finista.ru" },
               { icon: "Phone", label: "Телефон", value: "+7 (495) 000-00-00" },
               { icon: "MapPin", label: "Адрес", value: "Москва, ул. Пречистенка, 1" },
             ].map((item) => (
@@ -335,7 +437,7 @@ export default function Index() {
                   className="w-10 h-10 flex items-center justify-center border"
                   style={{ borderColor: "rgba(201,168,76,0.25)" }}
                 >
-                  <Icon name={item.icon} fallback="Mail" size={16} className="text-gold" />
+                  <Icon name={item.icon} fallback="Mail" size={16} />
                 </div>
                 <p className="font-montserrat text-[0.6rem] tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
                   {item.label}
