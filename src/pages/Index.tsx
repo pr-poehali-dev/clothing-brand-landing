@@ -7,11 +7,11 @@ const GALLERY_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-
 
 const NAV_ITEMS = [
   { label: "О бренде", href: "#about" },
-  { label: "Каталог изделий", href: "#catalog" },
-  { label: "Каталог тканей", href: "#fabrics" },
+  { label: "Изделия", href: "#catalog" },
+  { label: "Ткани", href: "#fabrics" },
   { label: "Упаковка", href: "#packaging" },
   { label: "Доставка", href: "#delivery" },
-  { label: "Связь и контакты", href: "#contacts" },
+  { label: "Контакты", href: "#contacts" },
 ];
 
 const CATALOG_ITEMS = [
@@ -138,7 +138,7 @@ export default function Index() {
             className="font-montserrat text-xs tracking-[0.45em] uppercase mb-6 animate-fade-in opacity-0"
             style={{ color: "var(--gold)", animationFillMode: "forwards" }}
           >
-            Коллекция 2025
+            Новинки 2025
           </p>
           <h1
             className="font-cormorant text-7xl md:text-9xl font-light tracking-[0.12em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
@@ -229,10 +229,10 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
-              Каталог изделий
+              Изделия
             </p>
             <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--cream)" }}>
-              Коллекции
+              Изделия
             </h2>
             <div className="gold-line mx-auto mt-6" />
           </div>
@@ -268,7 +268,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
-              Каталог тканей
+              Ткани
             </p>
             <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--cream)" }}>
               Материалы
@@ -412,18 +412,18 @@ export default function Index() {
         </div>
       </section>
 
-      {/* 6. СВЯЗЬ И КОНТАКТЫ */}
+      {/* 6. КОНТАКТЫ */}
       <section id="contacts" className="py-32 px-6" style={{ backgroundColor: "var(--warm-dark)" }}>
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
-            Связь и контакты
+            Контакты
           </p>
           <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-4" style={{ color: "var(--cream)" }}>
             Свяжитесь с нами
           </h2>
           <div className="gold-line mx-auto mb-10" />
           <p className="font-montserrat text-sm leading-relaxed mb-14" style={{ color: "rgba(240,234,214,0.6)", fontWeight: 300 }}>
-            Для персональных консультаций, индивидуальных заказов<br />и вопросов о коллекциях
+            Для персональных консультаций и индивидуальных заказов
           </p>
 
           <div className="grid md:grid-cols-3 gap-10 mb-16">
