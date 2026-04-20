@@ -274,7 +274,7 @@ export default function Index() {
               <h3 className="font-cormorant text-xl font-light mb-4" style={{ color: "var(--site-text)" }}>
                 По всей России
               </h3>
-              <p className="font-montserrat text-xs leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
+              <p className="font-montserrat text-sm leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 500 }}>
                 Доставка по всей России за 2–5 рабочих дней. Трек-номер на каждый заказ.
               </p>
             </div>
@@ -292,7 +292,7 @@ export default function Index() {
 
           <div className="flex flex-col items-center gap-6">
             {[
-              { label: "Инстаграм", value: "@finista.studio" },
+              { label: "Instagram", value: "@finista.studio" },
               { label: "Telegram", value: "@finista_studio" },
               { label: "Max", value: "@finista_studio" },
             ].map((item) => (
