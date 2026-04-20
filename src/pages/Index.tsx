@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/b3ff9782-fdd1-4e94-9063-63c58c4e7087.jpg";
+const HERO_MODEL_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/a88cfead-0afa-4652-8707-20d2552a9a0e.jpg";
 const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/d57d7118-39eb-4775-b452-8f955a2b2d43.jpg";
 
 const NAV_ITEMS = [
@@ -105,45 +106,46 @@ export default function Index() {
       </nav>
 
       {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="min-h-screen grid md:grid-cols-2" style={{ paddingTop: "80px" }}>
+        {/* Левая часть — текст */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(to bottom, rgba(30,34,40,0.45) 0%, rgba(30,34,40,0.25) 50%, rgba(30,34,40,0.72) 100%)" }}
-        />
-        <div className="relative z-10 text-center px-6">
+          className="flex flex-col justify-center px-10 md:px-16 lg:px-24 py-20"
+          style={{ backgroundColor: "var(--site-bg)" }}
+        >
+          <p className="font-montserrat text-xs tracking-[0.45em] uppercase mb-6 animate-fade-in opacity-0" style={{ color: "var(--gold)", animationFillMode: "forwards" }}>
+            Санкт-Петербург
+          </p>
           <h1
-            className="font-cormorant text-7xl md:text-9xl font-light tracking-[0.12em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
-            style={{ color: "#f0eee9", animationFillMode: "forwards" }}
+            className="font-cormorant text-6xl md:text-7xl lg:text-8xl font-light tracking-[0.08em] leading-none mb-6 animate-fade-in-up opacity-0 delay-200"
+            style={{ color: "var(--site-text)", animationFillMode: "forwards" }}
           >
             Финиста
           </h1>
           <div
-            className="gold-line mx-auto mb-6 animate-fade-in opacity-0 delay-400"
-            style={{ width: "80px", animationFillMode: "forwards" }}
+            className="mb-8 animate-fade-in opacity-0 delay-400"
+            style={{ width: "60px", height: "1px", background: "linear-gradient(to right, var(--gold), transparent)", animationFillMode: "forwards" }}
           />
           <p
-            className="font-cormorant italic text-xl md:text-2xl font-light tracking-widest animate-fade-in-up opacity-0 delay-500"
-            style={{ color: "rgba(240,238,233,0.85)", animationFillMode: "forwards" }}
+            className="font-cormorant italic text-xl md:text-2xl font-light leading-relaxed mb-12 animate-fade-in-up opacity-0 delay-500"
+            style={{ color: "var(--site-muted)", animationFillMode: "forwards" }}
           >
             Тихая роскошь из 100% шёлка
           </p>
-          <div className="mt-12 animate-fade-in-up opacity-0 delay-700" style={{ animationFillMode: "forwards" }}>
+          <div className="animate-fade-in-up opacity-0 delay-700" style={{ animationFillMode: "forwards" }}>
             <button className="btn-gold" onClick={() => scrollTo("#catalog")}>
               <span>Смотреть каталог</span>
             </button>
           </div>
         </div>
 
-        <div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in opacity-0 delay-700"
-          style={{ animationFillMode: "forwards" }}
-        >
-          <span className="font-montserrat text-[0.6rem] tracking-[0.3em] uppercase" style={{ color: "var(--gold)" }}>Scroll</span>
-          <div className="w-px h-10" style={{ background: "linear-gradient(to bottom, var(--gold), transparent)" }} />
+        {/* Правая часть — фото */}
+        <div className="relative overflow-hidden" style={{ minHeight: "60vh" }}>
+          <img
+            src={HERO_MODEL_IMAGE}
+            alt="Финиста — шёлковые изделия"
+            className="w-full h-full object-cover object-top animate-scale-in opacity-0"
+            style={{ animationFillMode: "forwards" }}
+          />
         </div>
       </section>
 
