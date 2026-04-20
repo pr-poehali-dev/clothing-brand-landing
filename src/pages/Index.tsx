@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/b3ff9782-fdd1-4e94-9063-63c58c4e7087.jpg";
-const HERO_MODEL_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/a88cfead-0afa-4652-8707-20d2552a9a0e.jpg";
+const HERO_MODEL_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/97b22331-9a80-4274-ac73-12481b46cd33.jpg";
 const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/d57d7118-39eb-4775-b452-8f955a2b2d43.jpg";
 
 const NAV_ITEMS = [
@@ -136,7 +136,7 @@ export default function Index() {
           <img
             src={HERO_MODEL_IMAGE}
             alt="Финиста — шёлковые изделия"
-            className="w-full h-full object-cover object-top animate-scale-in opacity-0"
+            className="w-full h-full object-cover object-center animate-scale-in opacity-0"
             style={{ animationFillMode: "forwards" }}
           />
         </div>
