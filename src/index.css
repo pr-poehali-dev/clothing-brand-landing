@@ -34,12 +34,17 @@
 
     --radius: 0rem;
 
-    --gold: #c9a84c;
-    --gold-light: #e2c97e;
-    --gold-dark: #9a7630;
+    --gold: #a07830;
+    --gold-light: #c9a84c;
+    --gold-dark: #7a5a20;
     --deep-black: #0d0b08;
     --warm-dark: #13110d;
     --cream: #f0ead6;
+
+    --site-bg: #faf8f4;
+    --site-section: #f2ede4;
+    --site-text: #2a2318;
+    --site-muted: #6b5e4a;
 
     --sidebar-background: 20 10% 5%;
     --sidebar-foreground: 45 20% 92%;
@@ -63,7 +68,8 @@
 
   body {
     @apply bg-background text-foreground;
-    background-color: var(--deep-black);
+    background-color: var(--site-bg);
+    color: var(--site-text);
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     letter-spacing: 0.02em;
@@ -195,7 +201,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--site-text);
   transition: color 0.3s ease;
 }
 .nav-link::after {
@@ -267,7 +273,7 @@
   transition: transform 0.35s ease;
 }
 .btn-gold:hover {
-  color: var(--deep-black);
+  color: var(--site-bg);
 }
 .btn-gold:hover::before {
   transform: translateX(0);
