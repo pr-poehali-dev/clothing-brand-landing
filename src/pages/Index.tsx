@@ -294,7 +294,7 @@ export default function Index() {
               { label: "Telegram", value: "@finista_studio", href: "https://t.me/finista_studio" },
               { label: "Max", value: "@finista_studio", href: "https://t.me/finista_studio" },
             ].map((item) => (
-              <div key={item.label} className="flex items-center gap-4">
+              <div key={item.label} className="flex items-center gap-2">
                 <p className="font-montserrat text-xs tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
                   {item.label}:
                 </p>
