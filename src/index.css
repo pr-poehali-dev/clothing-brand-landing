@@ -34,17 +34,19 @@
 
     --radius: 0rem;
 
-    --gold: #a07830;
-    --gold-light: #c9a84c;
-    --gold-dark: #7a5a20;
+    --gold: #b5903a;
+    --gold-light: #d4af6a;
+    --gold-dark: #8a6a22;
     --deep-black: #0d0b08;
     --warm-dark: #13110d;
     --cream: #f0ead6;
 
-    --site-bg: #faf8f4;
-    --site-section: #f2ede4;
-    --site-text: #2a2318;
-    --site-muted: #6b5e4a;
+    /* Концепция «Туман над Невой» */
+    --site-bg: #f0eee9; /* пыльно-молочный, чуть тёплый */
+    --site-section: #e6e2da; /* чуть темнее — секции */
+    --site-text: #1e2228; /* глубокий сине-чёрный */
+    --site-muted: #5a5e66; /* серо-синий приглушённый */
+    --site-accent: #d8d2c8; /* разделители и рамки */
 
     --sidebar-background: 20 10% 5%;
     --sidebar-foreground: 45 20% 92%;

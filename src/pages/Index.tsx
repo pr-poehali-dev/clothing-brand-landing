@@ -47,8 +47,8 @@ export default function Index() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          backgroundColor: scrolled ? "rgba(255,253,248,0.97)" : "transparent",
-          borderBottom: scrolled ? "1px solid rgba(180,150,60,0.2)" : "none",
+          backgroundColor: scrolled ? "rgba(240,238,233,0.96)" : "transparent",
+          borderBottom: scrolled ? "1px solid rgba(181,144,58,0.2)" : "none",
           backdropFilter: scrolled ? "blur(12px)" : "none",
         }}
       >
@@ -88,7 +88,7 @@ export default function Index() {
         {menuOpen && (
           <div
             className="lg:hidden px-8 pb-6 flex flex-col gap-5"
-            style={{ backgroundColor: "rgba(255,253,248,0.98)", borderTop: "1px solid rgba(180,150,60,0.15)" }}
+            style={{ backgroundColor: "rgba(240,238,233,0.98)", borderTop: "1px solid rgba(181,144,58,0.15)" }}
           >
             {NAV_ITEMS.map((item) => (
               <a
@@ -112,12 +112,12 @@ export default function Index() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to bottom, rgba(255,253,248,0.35) 0%, rgba(255,253,248,0.15) 50%, rgba(255,253,248,0.65) 100%)" }}
+          style={{ background: "linear-gradient(to bottom, rgba(30,34,40,0.45) 0%, rgba(30,34,40,0.25) 50%, rgba(30,34,40,0.72) 100%)" }}
         />
         <div className="relative z-10 text-center px-6">
           <h1
             className="font-cormorant text-7xl md:text-9xl font-light tracking-[0.12em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
-            style={{ color: "var(--site-text)", animationFillMode: "forwards" }}
+            style={{ color: "#f0eee9", animationFillMode: "forwards" }}
           >
             Финиста
           </h1>
@@ -127,7 +127,7 @@ export default function Index() {
           />
           <p
             className="font-cormorant italic text-xl md:text-2xl font-light tracking-widest animate-fade-in-up opacity-0 delay-500"
-            style={{ color: "var(--site-text)", animationFillMode: "forwards" }}
+            style={{ color: "rgba(240,238,233,0.85)", animationFillMode: "forwards" }}
           >
             Тихая роскошь из 100% шёлка
           </p>
@@ -154,7 +154,7 @@ export default function Index() {
             <div className="relative">
               <div
                 className="absolute -top-4 -left-4 w-full h-full border"
-                style={{ borderColor: "rgba(180,150,60,0.2)" }}
+                style={{ borderColor: "var(--site-accent)" }}
               />
               <img
                 src={ABOUT_IMAGE}
@@ -163,7 +163,7 @@ export default function Index() {
               />
               <div
                 className="absolute bottom-6 right-6 z-20 px-5 py-4"
-                style={{ backgroundColor: "var(--site-bg)", border: "1px solid rgba(180,150,60,0.3)" }}
+                style={{ backgroundColor: "var(--site-section)", border: "1px solid rgba(181,144,58,0.35)" }}
               >
                 <p className="font-cormorant text-3xl font-light" style={{ color: "var(--gold)" }}>2018</p>
                 <p className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase mt-1" style={{ color: "var(--site-text)", opacity: 0.6 }}>Основан в Петербурге с любовью к благородным тканям</p>
@@ -250,7 +250,7 @@ export default function Index() {
               <div key={item.title} className="flex items-start gap-6">
                 <div
                   className="w-10 h-10 flex-shrink-0 flex items-center justify-center border"
-                  style={{ borderColor: "rgba(180,150,60,0.3)" }}
+                  style={{ borderColor: "rgba(181,144,58,0.35)" }}
                 >
                   <Icon name={item.icon} fallback="Package" size={16} style={{ color: "var(--gold)" }} />
                 </div>
@@ -274,11 +274,11 @@ export default function Index() {
           <div className="max-w-sm mx-auto">
             <div
               className="flex flex-col items-center text-center p-10"
-              style={{ backgroundColor: "var(--site-section)", border: "1px solid rgba(180,150,60,0.15)" }}
+              style={{ backgroundColor: "var(--site-bg)", border: "1px solid var(--site-accent)" }}
             >
               <div
                 className="w-14 h-14 flex items-center justify-center mb-6 border"
-                style={{ borderColor: "rgba(180,150,60,0.3)" }}
+                style={{ borderColor: "rgba(181,144,58,0.35)" }}
               >
                 <Icon name="Map" fallback="Truck" size={22} style={{ color: "var(--gold)" }} />
               </div>
@@ -321,7 +321,7 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-10 px-6" style={{ borderTop: "1px solid rgba(180,150,60,0.2)", backgroundColor: "var(--site-bg)" }}>
+      <footer className="py-10 px-6" style={{ borderTop: "1px solid var(--site-accent)", backgroundColor: "var(--site-section)" }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
           <p className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: "var(--site-muted)" }}>
             © 2026 Финиста. Все права защищены.
