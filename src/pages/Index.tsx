@@ -140,19 +140,6 @@ export default function Index() {
       <section id="about" className="py-32 px-6" style={{ backgroundColor: "var(--site-bg)" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div
-                className="absolute -top-4 -left-4 w-full h-full border"
-                style={{ borderColor: "var(--site-accent)" }}
-              />
-              <img
-                src={ABOUT_IMAGE}
-                alt="О бренде Финиста"
-                className="w-full h-[600px] object-cover relative z-10"
-              />
-
-            </div>
-
             <div className="flex flex-col justify-center">
               <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-8" style={{ color: "var(--site-text)" }}>
                 О бренде
@@ -187,6 +174,18 @@ export default function Index() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="relative">
+              <div
+                className="absolute -top-4 -right-4 w-full h-full border"
+                style={{ borderColor: "var(--site-accent)" }}
+              />
+              <img
+                src={ABOUT_IMAGE}
+                alt="О бренде Финиста"
+                className="w-full h-[600px] object-cover relative z-10"
+              />
             </div>
           </div>
         </div>
