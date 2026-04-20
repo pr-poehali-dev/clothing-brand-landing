@@ -48,9 +48,9 @@ export default function Index() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          backgroundColor: scrolled ? "rgba(240,238,233,0.96)" : "transparent",
-          borderBottom: scrolled ? "1px solid rgba(181,144,58,0.2)" : "none",
-          backdropFilter: scrolled ? "blur(12px)" : "none",
+          backgroundColor: "rgba(255,255,255,0.97)",
+          borderBottom: "1px solid rgba(181,144,58,0.15)",
+          backdropFilter: "blur(12px)",
         }}
       >
         <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
