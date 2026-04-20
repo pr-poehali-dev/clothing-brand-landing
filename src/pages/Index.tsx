@@ -57,7 +57,7 @@ export default function Index() {
           <a
             href="#about"
             onClick={(e) => { e.preventDefault(); scrollTo("#about"); }}
-            className="font-cormorant text-2xl tracking-[0.3em] font-light"
+            className="font-cormorant text-4xl tracking-[0.3em] font-light"
             style={{ color: "var(--gold)" }}
           >
             Финиста
@@ -112,15 +112,9 @@ export default function Index() {
           className="flex flex-col justify-center px-10 md:px-16 lg:px-24 py-20"
           style={{ backgroundColor: "var(--site-bg)" }}
         >
-          <h1
-            className="font-cormorant text-6xl md:text-7xl lg:text-8xl font-light tracking-[0.08em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
-            style={{ color: "var(--site-text)", animationFillMode: "forwards" }}
-          >
-            Финиста
-          </h1>
           <p
-            className="font-montserrat text-sm md:text-base tracking-[0.18em] uppercase mb-10 animate-fade-in opacity-0 delay-400"
-            style={{ color: "var(--gold)", fontWeight: 400, letterSpacing: "0.22em", animationFillMode: "forwards" }}
+            className="font-cormorant italic text-xl md:text-2xl font-light tracking-widest mb-10 animate-fade-in opacity-0 delay-400"
+            style={{ color: "var(--site-muted)", animationFillMode: "forwards" }}
           >
             Тихая роскошь из 100% шёлка
           </p>
