@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/b3ff9782-fdd1-4e94-9063-63c58c4e7087.jpg";
 const HERO_MODEL_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/97b22331-9a80-4274-ac73-12481b46cd33.jpg";
-const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/d57d7118-39eb-4775-b452-8f955a2b2d43.jpg";
+const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/bb68429f-7825-48a0-948e-e96f241fec9a.jpg";
 
 const NAV_ITEMS = [
   { label: "О бренде", href: "#about" },
