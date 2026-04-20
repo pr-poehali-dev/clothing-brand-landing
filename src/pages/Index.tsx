@@ -134,17 +134,11 @@ export default function Index() {
           style={{ background: "linear-gradient(to bottom, rgba(13,11,8,0.55) 0%, rgba(13,11,8,0.35) 50%, rgba(13,11,8,0.88) 100%)" }}
         />
         <div className="relative z-10 text-center px-6">
-          <p
-            className="font-montserrat text-xs tracking-[0.45em] uppercase mb-6 animate-fade-in opacity-0"
-            style={{ color: "var(--gold)", animationFillMode: "forwards" }}
-          >
-            Новинки 2025
-          </p>
           <h1
             className="font-cormorant text-7xl md:text-9xl font-light tracking-[0.12em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
             style={{ color: "var(--cream)", animationFillMode: "forwards" }}
           >
-            FINISTA
+            Финиста
           </h1>
           <div
             className="gold-line mx-auto mb-6 animate-fade-in opacity-0 delay-400"
