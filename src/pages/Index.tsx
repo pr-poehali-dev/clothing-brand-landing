@@ -298,7 +298,7 @@ export default function Index() {
                 <p className="font-montserrat text-xs tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
                   {item.label}:
                 </p>
-                <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-montserrat text-sm font-light hover:opacity-70 transition-opacity" style={{ color: "var(--site-text)" }}>
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-cormorant text-xl font-light tracking-wide hover:opacity-70 transition-opacity" style={{ color: "var(--site-text)" }}>
                   {item.value}
                 </a>
               </div>
