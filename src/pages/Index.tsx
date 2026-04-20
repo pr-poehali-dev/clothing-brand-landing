@@ -158,7 +158,7 @@ export default function Index() {
                 О бренде
               </h2>
               <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
-                Финиста — петербургский бренд, воспевающий эстетику натурального итальянского шелка. В наших лимитированных коллекциях лаконичность кроя встречается с безупречным вниманием к деталям, предлагая вам индивидуальный подход даже в готовых решениях.
+                Финиста — петербургский бренд, воспевающий эстетику натурального итальянского шелка.
               </p>
               <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Мы создаем моду, опираясь на два формата взаимодействия:
