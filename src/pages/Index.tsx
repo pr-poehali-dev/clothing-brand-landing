@@ -154,14 +154,9 @@ export default function Index() {
             </div>
 
             <div className="flex flex-col justify-center">
-              <p className="font-montserrat text-xs tracking-[0.4em] uppercase mb-4" style={{ color: "var(--gold)" }}>
+              <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-8" style={{ color: "var(--site-text)" }}>
                 О бренде
-              </p>
-              <h2 className="font-cormorant text-5xl md:text-6xl font-light leading-tight mb-6" style={{ color: "var(--site-text)" }}>
-                Каждая деталь —<br />
-                <em>произведение искусства</em>
               </h2>
-              <div className="gold-line mb-8" />
               <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Финиста — Петербургский бренд, воспевающий эстетику натурального итальянского шелка. В наших лимитированных коллекциях лаконичность кроя встречается с безупречным вниманием к деталям, предлагая вам индивидуальный подход в готовых решениях.
               </p>
