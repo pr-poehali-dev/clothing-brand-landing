@@ -112,22 +112,15 @@ export default function Index() {
           className="flex flex-col justify-center px-10 md:px-16 lg:px-24 py-20"
           style={{ backgroundColor: "var(--site-bg)" }}
         >
-          <p className="font-montserrat text-xs tracking-[0.45em] uppercase mb-6 animate-fade-in opacity-0" style={{ color: "var(--gold)", animationFillMode: "forwards" }}>
-            Санкт-Петербург
-          </p>
           <h1
-            className="font-cormorant text-6xl md:text-7xl lg:text-8xl font-light tracking-[0.08em] leading-none mb-6 animate-fade-in-up opacity-0 delay-200"
+            className="font-cormorant text-6xl md:text-7xl lg:text-8xl font-light tracking-[0.08em] leading-none mb-4 animate-fade-in-up opacity-0 delay-200"
             style={{ color: "var(--site-text)", animationFillMode: "forwards" }}
           >
             Финиста
           </h1>
-          <div
-            className="mb-8 animate-fade-in opacity-0 delay-400"
-            style={{ width: "60px", height: "1px", background: "linear-gradient(to right, var(--gold), transparent)", animationFillMode: "forwards" }}
-          />
           <p
-            className="font-cormorant italic text-xl md:text-2xl font-light leading-relaxed mb-12 animate-fade-in-up opacity-0 delay-500"
-            style={{ color: "var(--site-muted)", animationFillMode: "forwards" }}
+            className="font-montserrat text-sm md:text-base tracking-[0.18em] uppercase mb-10 animate-fade-in opacity-0 delay-400"
+            style={{ color: "var(--gold)", fontWeight: 400, letterSpacing: "0.22em", animationFillMode: "forwards" }}
           >
             Тихая роскошь из 100% шёлка
           </p>
@@ -163,13 +156,7 @@ export default function Index() {
                 alt="О бренде Финиста"
                 className="w-full h-[600px] object-cover relative z-10"
               />
-              <div
-                className="absolute bottom-6 right-6 z-20 px-5 py-4"
-                style={{ backgroundColor: "var(--site-section)", border: "1px solid rgba(181,144,58,0.35)" }}
-              >
-                <p className="font-cormorant text-3xl font-light" style={{ color: "var(--gold)" }}>2018</p>
-                <p className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase mt-1" style={{ color: "var(--site-text)", opacity: 0.6 }}>Основан в Петербурге с любовью к благородным тканям</p>
-              </div>
+
             </div>
 
             <div className="flex flex-col justify-center">
@@ -181,16 +168,16 @@ export default function Index() {
                 <em>произведение искусства</em>
               </h2>
               <div className="gold-line mb-8" />
-              <p className="font-montserrat text-sm leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
+              <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Финиста — петербургский бренд, воспевающий эстетику натурального итальянского шелка. В наших лимитированных коллекциях лаконичность кроя встречается с безупречным вниманием к деталям, предлагая вам индивидуальный подход в готовых решениях.
               </p>
-              <p className="font-montserrat text-sm leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
+              <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Мы глубоко погружаемся в каждый этап создания: тщательно отбираем лучшие премиальные ткани из Италии, годами выверяем идеальный крой и воплощаем задуманное в изящных, самодостаточных моделях.
               </p>
-              <p className="font-montserrat text-sm leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
+              <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Выбирая сочетание безупречного материала и продуманного силуэта, вы получаете по-настоящему эксклюзивный образ.
               </p>
-              <p className="font-montserrat text-sm leading-relaxed mb-10" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
+              <p className="font-montserrat text-base leading-relaxed mb-10" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
                 Ознакомьтесь с нашей текущей коллекцией — каждое изделие доступно к покупке. Пожалуйста, уточняйте наличие интересующих вас моделей у наших консультантов.
               </p>
 
@@ -256,7 +243,7 @@ export default function Index() {
                 >
                   <Icon name={item.icon} fallback="Package" size={16} style={{ color: "var(--gold)" }} />
                 </div>
-                <p className="font-montserrat text-sm leading-relaxed pt-2" style={{ color: "var(--site-text)", fontWeight: 300 }}>{item.title}</p>
+                <p className="font-montserrat text-base leading-relaxed pt-2" style={{ color: "var(--site-text)", fontWeight: 400 }}>{item.title}</p>
               </div>
             ))}
           </div>
