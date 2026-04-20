@@ -60,7 +60,7 @@ export default function Index() {
             className="flex items-center gap-3 font-cormorant text-4xl tracking-[0.3em] font-light"
             style={{ color: "var(--gold)" }}
           >
-            <img src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/00c8e0ad-8cc1-468c-9362-40f75a3eebcb.png" alt="Финиста" className="h-14 w-14 object-contain" />
+            <img src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/00c8e0ad-8cc1-468c-9362-40f75a3eebcb.png" alt="Финиста" className="h-14 w-14 object-contain" style={{ mixBlendMode: "multiply" }} />
           </a>
 
           <div className="hidden lg:flex items-center gap-8">
