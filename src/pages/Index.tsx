@@ -57,9 +57,10 @@ export default function Index() {
           <a
             href="#about"
             onClick={(e) => { e.preventDefault(); scrollTo("#about"); }}
-            className="font-cormorant text-4xl tracking-[0.3em] font-light"
+            className="flex items-center gap-3 font-cormorant text-4xl tracking-[0.3em] font-light"
             style={{ color: "var(--gold)" }}
           >
+            <img src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/142e9a08-ec5e-46fa-812a-e77dddfda8d4.png" alt="Финиста" className="h-10 w-10 object-contain" />
             Финиста
           </a>
 
@@ -281,17 +282,17 @@ export default function Index() {
 
           <div className="flex flex-col items-center gap-6">
             {[
-              { label: "Instagram", value: "@finista.studio" },
-              { label: "Telegram", value: "@finista_studio" },
-              { label: "Max", value: "@finista_studio" },
+              { label: "Instagram", value: "@finista.studio", href: "https://www.instagram.com/finista.studio?igsh=empzNWoyejRocXU1" },
+              { label: "Telegram", value: "@finista_studio", href: "https://t.me/finista_studio" },
+              { label: "Max", value: "@finista_studio", href: "https://t.me/finista_studio" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-4">
                 <p className="font-montserrat text-xs tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
                   {item.label}:
                 </p>
-                <p className="font-montserrat text-sm font-light" style={{ color: "var(--site-text)" }}>
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-montserrat text-sm font-light hover:opacity-70 transition-opacity" style={{ color: "var(--site-text)" }}>
                   {item.value}
-                </p>
+                </a>
               </div>
             ))}
           </div>
