@@ -159,7 +159,7 @@ export default function Index() {
               <div className="mb-6 pl-4 border-l" style={{ borderColor: "var(--gold)" }}>
                 <p className="font-montserrat text-sm font-medium mb-1" style={{ color: "var(--site-text)" }}>Эксклюзивный пошив</p>
                 <p className="font-montserrat text-base leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
-                  Если вы хотите создать нечто уникальное, мы предлагаем формат индивидуальной работы. Вы выбираете премиальную ткань из нашей коллекции и желаемую модель, а мы уточняем все параметры и воплощаем изделие, созданное специально для вас.
+                  Эксклюзивный пошив: если вы хотите подчеркнуть свою индивидуальность, мы предлагаем формат персональной работы. Вы выбираете понравившуюся ткань и модель из нашего ассортимента по уже отработанным лекалам, а мы, опираясь на наши безупречно отработанные лекала, адаптируем изделие под ваши параметры.
                 </p>
               </div>
               <p className="font-montserrat text-base leading-relaxed mb-10" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
@@ -291,7 +291,7 @@ export default function Index() {
             {[
               { label: "Instagram", value: "@finista.studio", href: "https://www.instagram.com/finista.studio?igsh=empzNWoyejRocXU1" },
               { label: "Telegram", value: "@finista_studio", href: "https://t.me/finista_studio" },
-              { label: "Max", value: "@finista_studio", href: "https://t.me/finista_studio" },
+              { label: "Max", value: "@finista_studio", href: "https://max.ru/join/lu6ttwYNRpSyQPnwHIyG6CXm0J_F5zkJr3-gg3qphpY" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-2">
                 <p className="font-montserrat text-xs tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
