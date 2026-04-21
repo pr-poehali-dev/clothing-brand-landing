@@ -285,11 +285,7 @@ export default function Index() {
           <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-4" style={{ color: "var(--site-text)" }}>
             Контакты
           </h2>
-          <div className="gold-line mx-auto mb-6" />
-          <p className="font-montserrat text-sm font-light tracking-[0.15em] uppercase mb-3" style={{ color: "var(--site-muted)" }}>
-            Бесплатная консультация
-          </p>
-          <Icon name="ArrowDown" size={16} style={{ color: "var(--gold)" }} className="mx-auto mb-10 animate-bounce" />
+          <div className="gold-line mx-auto mb-10" />
 
           <div className="flex flex-col items-center gap-6">
             {[
