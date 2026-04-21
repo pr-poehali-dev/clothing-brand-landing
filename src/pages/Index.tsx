@@ -166,26 +166,11 @@ export default function Index() {
                 Тщательный отбор лучших итальянских материалов, выверенный крой и внимание к каждому шву позволяют нам достигать совершенства в каждом изделии. Выбирая «Финисту», вы выбираете образ, созданный с душой и безупречным вкусом.
               </p>
 
-              <div className="flex gap-12 mb-10">
+              <div className="flex gap-12">
                 {[["100%", "Натуральные ткани"], ["100%", "Ручная работа"]].map(([num, label]) => (
                   <div key={label}>
                     <p className="font-cormorant text-4xl font-light" style={{ color: "var(--gold)" }}>{num}</p>
                     <p className="font-montserrat text-[0.6rem] tracking-[0.15em] uppercase mt-1" style={{ color: "var(--site-muted)" }}>{label}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="flex flex-col gap-3">
-                {[
-                  { label: "Instagram", value: "@finista.studio", href: "https://www.instagram.com/finista.studio?igsh=empzNWoyejRocXU1" },
-                  { label: "Telegram", value: "@finista_studio", href: "https://t.me/finista_studio" },
-                  { label: "Max", value: "@finista_studio", href: "https://max.ru/join/lu6ttwYNRpSyQPnwHIyG6CXm0J_F5zkJr3-gg3qphpY" },
-                ].map((item) => (
-                  <div key={item.label} className="flex items-center gap-2">
-                    <span className="font-montserrat text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: "var(--gold)" }}>{item.label}</span>
-                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-montserrat text-sm font-light hover:opacity-60 transition-opacity" style={{ color: "var(--site-muted)" }}>
-                      {item.value}
-                    </a>
                   </div>
                 ))}
               </div>
@@ -300,7 +285,11 @@ export default function Index() {
           <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-4" style={{ color: "var(--site-text)" }}>
             Контакты
           </h2>
-          <div className="gold-line mx-auto mb-10" />
+          <div className="gold-line mx-auto mb-6" />
+          <p className="font-montserrat text-sm font-light tracking-[0.15em] uppercase mb-3" style={{ color: "var(--site-muted)" }}>
+            Бесплатная консультация
+          </p>
+          <Icon name="ArrowDown" size={16} style={{ color: "var(--gold)" }} className="mx-auto mb-10 animate-bounce" />
 
           <div className="flex flex-col items-center gap-6">
             {[
