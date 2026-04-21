@@ -144,25 +144,25 @@ export default function Index() {
               <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-8" style={{ color: "var(--site-text)" }}>
                 О бренде
               </h2>
-              <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
+              <p className="font-montserrat text-sm leading-loose mb-4" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                 Финиста — петербургский бренд, воспевающий эстетику натурального итальянского шелка.
               </p>
-              <p className="font-montserrat text-base leading-relaxed mb-4" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
+              <p className="font-montserrat text-sm leading-loose mb-4" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                 Мы создаем моду, опираясь на два формата взаимодействия:
               </p>
               <div className="mb-4 pl-4 border-l" style={{ borderColor: "var(--gold)" }}>
-                <p className="font-montserrat text-sm font-medium mb-1" style={{ color: "var(--site-text)" }}>Готовые изделия</p>
-                <p className="font-montserrat text-base leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
+                <p className="font-montserrat text-xs tracking-[0.15em] uppercase mb-2" style={{ color: "var(--site-text)", fontWeight: 400 }}>Готовые изделия</p>
+                <p className="font-montserrat text-sm leading-loose" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                   Вы можете выбрать и приобрести понравившуюся модель из нашего наличия. Мы всегда готовы проконсультировать вас по актуальному ассортименту и размерам.
                 </p>
               </div>
               <div className="mb-6 pl-4 border-l" style={{ borderColor: "var(--gold)" }}>
-                <p className="font-montserrat text-sm font-medium mb-1" style={{ color: "var(--site-text)" }}>Эксклюзивный пошив</p>
-                <p className="font-montserrat text-base leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
+                <p className="font-montserrat text-xs tracking-[0.15em] uppercase mb-2" style={{ color: "var(--site-text)", fontWeight: 400 }}>Эксклюзивный пошив</p>
+                <p className="font-montserrat text-sm leading-loose" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                   Если вы хотите подчеркнуть свою индивидуальность, мы предлагаем формат персональной работы. Вы выбираете понравившуюся ткань и модель из нашего ассортимента по уже отработанным лекалам, а мы, опираясь на наши безупречно отработанные лекала, адаптируем изделие под ваши параметры.
                 </p>
               </div>
-              <p className="font-montserrat text-base leading-relaxed mb-10" style={{ color: "var(--site-muted)", fontWeight: 400 }}>
+              <p className="font-montserrat text-sm leading-loose mb-10" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                 Тщательный отбор лучших итальянских материалов, выверенный крой и внимание к каждому шву позволяют нам достигать совершенства в каждом изделии. Выбирая «Финисту», вы выбираете образ, созданный с душой и безупречным вкусом.
               </p>
 
@@ -240,7 +240,7 @@ export default function Index() {
                 >
                   <Icon name={item.icon} fallback="Package" size={16} style={{ color: "var(--gold)" }} />
                 </div>
-                <p className="font-montserrat text-base leading-relaxed pt-2" style={{ color: "var(--site-text)", fontWeight: 400 }}>{item.title}</p>
+                <p className="font-montserrat text-sm leading-loose pt-2" style={{ color: "var(--site-text)", fontWeight: 300 }}>{item.title}</p>
               </div>
             ))}
           </div>
@@ -271,7 +271,7 @@ export default function Index() {
               <h3 className="font-cormorant text-xl font-light mb-4" style={{ color: "var(--site-text)" }}>
                 По всей России
               </h3>
-              <p className="font-montserrat text-sm leading-relaxed" style={{ color: "var(--site-muted)", fontWeight: 500 }}>
+              <p className="font-montserrat text-sm leading-loose" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
                 Доставка по всей России за 2–5 рабочих дней. Трек-номер на каждый заказ.
               </p>
             </div>
@@ -297,7 +297,7 @@ export default function Index() {
                 <p className="font-montserrat text-xs tracking-[0.25em] uppercase" style={{ color: "var(--gold)" }}>
                   {item.label}:
                 </p>
-                <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-cormorant text-xl font-light tracking-wide hover:opacity-70 transition-opacity" style={{ color: "var(--site-text)" }}>
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-montserrat text-sm font-light tracking-wide hover:opacity-70 transition-opacity" style={{ color: "var(--site-text)" }}>
                   {item.value}
                 </a>
               </div>
