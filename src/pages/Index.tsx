@@ -5,6 +5,100 @@ const HERO_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e58
 const HERO_MODEL_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/97b22331-9a80-4274-ac73-12481b46cd33.jpg";
 const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/cdb27adb-529b-4864-9a54-cfd0baf7f265.JPEG";
 
+const FABRIC_ITEMS = [
+  {
+    name: "Шёлк «Пейсли»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/e401e0fc-8574-4b6d-b820-25a86e40a131.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c0aa67de-c547-491c-bc55-8cd5fc6bf1c1.JPEG",
+    ],
+  },
+  {
+    name: "Шёлк «Тигры»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f8bb1a11-338f-4ba1-8ec2-1a720e6ae362.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/87225818-f181-43ad-83ea-28536f5b3de5.JPEG",
+    ],
+  },
+  {
+    name: "Шёлк «Волна»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/d1abb960-b8ce-4710-8237-d0d0f87b002c.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/13282699-5306-47a7-8497-5cf9345f6047.JPG",
+    ],
+  },
+  {
+    name: "Шёлк «Цветы на белом»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/33e63c2a-ddea-41dc-8de5-a8b111a7e44f.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c97fb2fe-0b43-4b11-83f9-f56c1d7a8b04.JPG",
+    ],
+  },
+  {
+    name: "Лён со стеклярусом",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/47bc8223-32a5-41a3-93b9-044951736505.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c9b502ba-5e38-44d7-86e4-d7d775e6cda5.JPEG",
+    ],
+  },
+  {
+    name: "Твид",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ecba9880-7a43-47af-bb6d-0135d13a9d30.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8805b51e-7a41-4222-aae5-9ed11f90f419.JPEG",
+    ],
+  },
+  {
+    name: "Шерсть «Птицы»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/2b6399dd-4a4f-48a4-8e1b-c41894de4cf9.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8c64df00-91fb-411c-8233-6090d553f019.JPG",
+    ],
+  },
+  {
+    name: "Вискоза «Леопард»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/e1083284-767a-4ee5-adb9-28c0ca69fdde.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4e7936c7-8455-40c8-aa57-fdd6aca69f0d.JPG",
+    ],
+  },
+  {
+    name: "Шёлк «Цветы на чёрном»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/5a1675c2-1812-475a-ab92-358a22a2fe9f.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3107af82-a102-4504-9aa0-89c2fbf1761d.JPG",
+    ],
+  },
+  {
+    name: "Крепдешин «Маки»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8a70f2da-d9fe-4c6a-8e57-1ef0fd9dea6d.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/d5001c4a-8e78-4fad-897d-14b2a52d55a4.JPG",
+    ],
+  },
+  {
+    name: "Хлопок «Калейдоскоп»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
+    ],
+  },
+  {
+    name: "Off-White «Розы»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/12b1fb97-1f3f-49b7-9dc2-dbbbf47d7312.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8039c9fc-6dac-4679-8e62-c35b1b9a9ccf.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/cab56dd8-ee58-4ea0-a086-c52bb61deefa.jpg",
+    ],
+  },
+  {
+    name: "Шёлк «Цветочный сад»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ca7cb32a-3a1b-492d-8e55-102a2c71cf6a.PNG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3da372fb-5e6b-41a7-800d-905c3eebaf08.PNG",
+    ],
+  },
+];
+
 const NAV_ITEMS = [
   { label: "О бренде", href: "#about" },
   { label: "Изделия", href: "#catalog" },
@@ -26,6 +120,40 @@ const CATALOG_ITEMS = [
   { title: "Платье-кимоно «Цветы на черном»", description: "Платье свободного кроя с разрезами по бокам и поясом.\nЯркий цветочный принт на глубоком черном. Создает женственный и стильный силуэт.\n\nСостав: 100% натуральный шелк", price: "38 000 ₽", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/1f1d6a26-37ea-457c-9771-6a6fa76a141f.JPG", gallery: ["https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/5a1675c2-1812-475a-ab92-358a22a2fe9f.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3107af82-a102-4504-9aa0-89c2fbf1761d.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/7d871b29-3ac1-4ec0-9974-212d20fec07e.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/dc8f2bf8-c815-442b-9e03-c426f19f53ee.jpg"] },
   { title: "Платье-кимоно короткое «Кошки»", description: "Платье свободного кроя с поясом. Изящный принт добавляет образу игривый характер.\n\nСостав: 100% натуральный шелк", price: "32 000 ₽", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/eead6b01-ddea-4f8e-9aef-ea699242f154.PNG", gallery: ["https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/0c6f26cb-b6a6-4927-b764-211e77100446.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/57134b16-3140-4cd9-85e5-9c841422aa6c.JPEG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8cc771f3-3055-4d75-8102-64dd36093642.JPEG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/5729a6db-1d71-467e-b08f-8cb1d3c1733f.JPEG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/5f20faf0-ebc2-492b-b9ed-fe800cd8dbad.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4a586ca1-ed49-4817-9c3e-20c08cb74ed3.JPG"] },
 ];
+
+function FabricCard({ fabric }: { fabric: { name: string; imgs: string[] } }) {
+  const [idx, setIdx] = useState(0);
+  if (fabric.imgs.length === 0) return null;
+  return (
+    <div className="flex flex-col gap-3">
+      <div
+        className="relative overflow-hidden aspect-square cursor-pointer group"
+        onClick={() => fabric.imgs.length > 1 && setIdx((i) => (i + 1) % fabric.imgs.length)}
+      >
+        <img
+          src={fabric.imgs[idx]}
+          alt={fabric.name}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        {fabric.imgs.length > 1 && (
+          <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+            {fabric.imgs.map((_, i) => (
+              <button
+                key={i}
+                onClick={(e) => { e.stopPropagation(); setIdx(i); }}
+                className="w-1.5 h-1.5 rounded-full transition-all"
+                style={{ backgroundColor: i === idx ? "var(--gold)" : "rgba(255,255,255,0.5)" }}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      <p className="font-montserrat text-xs text-center tracking-wide" style={{ color: "var(--site-text)", fontWeight: 300 }}>
+        {fabric.name}
+      </p>
+    </div>
+  );
+}
 
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
@@ -242,11 +370,19 @@ export default function Index() {
       {/* 3. ТКАНИ */}
       <section id="fabrics" className="py-32 px-6" style={{ backgroundColor: "var(--site-bg)" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-4">
+          <div className="text-center mb-16">
             <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--site-text)" }}>
               Ткани
             </h2>
             <div className="gold-line mx-auto mt-6" />
+            <p className="font-montserrat text-sm mt-8 max-w-xl mx-auto" style={{ color: "var(--site-text)", fontWeight: 300, opacity: 0.7 }}>
+              Только натуральные и премиальные материалы — шёлк, лён, шерсть, твид. Каждая ткань отобрана вручную.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {FABRIC_ITEMS.map((fabric) => (
+              <FabricCard key={fabric.name} fabric={fabric} />
+            ))}
           </div>
         </div>
       </section>
