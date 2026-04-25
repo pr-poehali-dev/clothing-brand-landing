@@ -15,7 +15,7 @@ const NAV_ITEMS = [
 ];
 
 const CATALOG_ITEMS = [
-  { title: "Бомбер «Птицы»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/966a7200-c78f-4c68-8439-75e94407070e.jpg", gallery: [] },
+  { title: "Бомбер «Птицы»", description: "Приталенный к низу незаметными защипами, воротник-стойка, клепки и изящная вышивка.\n\n100% шерсть, подклад: купра 100%", price: "35 000 ₽", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/80f288c6-b72e-47bb-b2ea-bd22d10e6b02.JPG", gallery: ["https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/2b6399dd-4a4f-48a4-8e1b-c41894de4cf9.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8c64df00-91fb-411c-8233-6090d553f019.JPG", "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/13ee398f-04d5-492a-b30c-c540db993e44.JPEG"] },
   { title: "Бомбер из Твида", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/96f35585-df22-490c-9c81-6d0a8601d7d6.jpg", gallery: [] },
   { title: "Ватник-кимоно со стеклярусом", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/3f4eaa79-ecdf-4069-9536-6af6fe073e13.jpg", gallery: [] },
   { title: "Костюм с топом «Пейсли»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/275ba942-b604-43d9-aba6-1e195fae6602.jpg", gallery: [] },
@@ -395,10 +395,15 @@ export default function Index() {
                   <h3 className="font-cormorant text-3xl font-light mb-4" style={{ color: "var(--site-text)" }}>
                     {selectedItem.title}
                   </h3>
-                  <p className="font-montserrat text-sm leading-loose font-light" style={{ color: "var(--site-muted)" }}>
+                  <p className="font-montserrat text-sm leading-loose font-light whitespace-pre-line" style={{ color: "var(--site-muted)" }}>
                     {selectedItem.description}
                   </p>
                 </div>
+                {"price" in selectedItem && selectedItem.price && (
+                  <p className="font-cormorant text-2xl font-light" style={{ color: "var(--gold)" }}>
+                    {selectedItem.price as string}
+                  </p>
+                )}
                 <a
                   href="https://t.me/finista_studio"
                   target="_blank"
