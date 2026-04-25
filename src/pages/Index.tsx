@@ -14,10 +14,25 @@ const NAV_ITEMS = [
   { label: "Контакты", href: "#contacts" },
 ];
 
+const CATALOG_ITEMS = [
+  { title: "Бомбер «Птицы»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/966a7200-c78f-4c68-8439-75e94407070e.jpg", gallery: [] },
+  { title: "Бомбер из Твида", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/96f35585-df22-490c-9c81-6d0a8601d7d6.jpg", gallery: [] },
+  { title: "Ватник-кимоно со стеклярусом", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/3f4eaa79-ecdf-4069-9536-6af6fe073e13.jpg", gallery: [] },
+  { title: "Костюм с топом «Пейсли»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/275ba942-b604-43d9-aba6-1e195fae6602.jpg", gallery: [] },
+  { title: "Костюм-кимоно «Леопард»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/8bebaeca-51e7-4f7e-840d-1c074e2db46f.jpg", gallery: [] },
+  { title: "Костюм-кимоно «Тигры»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/2037c323-c278-4909-a74e-a1f1c345e433.jpg", gallery: [] },
+  { title: "Платье с воланами", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/17db0d59-2f3a-4451-b66a-32aaf2d2449f.jpg", gallery: [] },
+  { title: "Платье с открытой спиной «Волна»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/6809e445-f2fd-407a-8755-3b7ee2ec4592.jpg", gallery: [] },
+  { title: "Платье-кимоно", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/65390da3-ff64-45b2-9ffc-0cf8a99925f1.jpg", gallery: [] },
+  { title: "Платье-кимоно короткое «Кошки»", description: "Описание появится позже.", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/0ce25d88-546b-4031-b84d-b263f6db179d.jpg", gallery: [] },
+];
+
 export default function Index() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
+  const [selectedItem, setSelectedItem] = useState<typeof CATALOG_ITEMS[0] | null>(null);
+  const [activePhoto, setActivePhoto] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -202,19 +217,12 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            {[
-              { title: "Бомбер «Птицы»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/966a7200-c78f-4c68-8439-75e94407070e.jpg" },
-              { title: "Бомбер из Твида", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/96f35585-df22-490c-9c81-6d0a8601d7d6.jpg" },
-              { title: "Ватник-кимоно со стеклярусом", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/3f4eaa79-ecdf-4069-9536-6af6fe073e13.jpg" },
-              { title: "Костюм с топом «Пейсли»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/275ba942-b604-43d9-aba6-1e195fae6602.jpg" },
-              { title: "Костюм-кимоно «Леопард»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/8bebaeca-51e7-4f7e-840d-1c074e2db46f.jpg" },
-              { title: "Костюм-кимоно «Тигры»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/2037c323-c278-4909-a74e-a1f1c345e433.jpg" },
-              { title: "Платье с воланами", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/17db0d59-2f3a-4451-b66a-32aaf2d2449f.jpg" },
-              { title: "Платье с открытой спиной «Волна»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/6809e445-f2fd-407a-8755-3b7ee2ec4592.jpg" },
-              { title: "Платье-кимоно", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/65390da3-ff64-45b2-9ffc-0cf8a99925f1.jpg" },
-              { title: "Платье-кимоно короткое «Кошки»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/0ce25d88-546b-4031-b84d-b263f6db179d.jpg" },
-            ].map((item) => (
-              <div key={item.title} className="group flex flex-col gap-3">
+            {CATALOG_ITEMS.map((item) => (
+              <div
+                key={item.title}
+                className="group flex flex-col gap-3 cursor-pointer"
+                onClick={() => { setSelectedItem(item); setActivePhoto(0); }}
+              >
                 <div className="overflow-hidden aspect-[3/4]" style={{ border: "1px solid rgba(181,144,58,0.2)" }}>
                   <img
                     src={item.img}
@@ -333,6 +341,78 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* МОДАЛЬНОЕ ОКНО ИЗДЕЛИЯ */}
+      {selectedItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          style={{ backgroundColor: "rgba(0,0,0,0.85)" }}
+          onClick={() => setSelectedItem(null)}
+        >
+          <div
+            className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto"
+            style={{ backgroundColor: "var(--site-bg)", border: "1px solid rgba(181,144,58,0.3)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-4 right-4 z-10 flex items-center justify-center w-8 h-8 transition-opacity hover:opacity-60"
+              onClick={() => setSelectedItem(null)}
+              style={{ color: "var(--site-text)" }}
+            >
+              <Icon name="X" size={20} />
+            </button>
+
+            <div className="flex flex-col md:flex-row">
+              {/* Левая часть — фото */}
+              <div className="md:w-1/2 flex-shrink-0">
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={[selectedItem.img, ...selectedItem.gallery][activePhoto]}
+                    alt={selectedItem.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {selectedItem.gallery.length > 0 && (
+                  <div className="flex gap-2 p-3 overflow-x-auto">
+                    {[selectedItem.img, ...selectedItem.gallery].map((photo, i) => (
+                      <div
+                        key={i}
+                        className="flex-shrink-0 w-14 h-14 overflow-hidden cursor-pointer"
+                        style={{ border: i === activePhoto ? "1px solid var(--gold)" : "1px solid rgba(181,144,58,0.2)" }}
+                        onClick={() => setActivePhoto(i)}
+                      >
+                        <img src={photo} alt="" className="w-full h-full object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Правая часть — информация */}
+              <div className="md:w-1/2 flex flex-col justify-center p-8 gap-6">
+                <div>
+                  <div className="gold-line mb-6" style={{ marginLeft: 0 }} />
+                  <h3 className="font-cormorant text-3xl font-light mb-4" style={{ color: "var(--site-text)" }}>
+                    {selectedItem.title}
+                  </h3>
+                  <p className="font-montserrat text-sm leading-loose font-light" style={{ color: "var(--site-muted)" }}>
+                    {selectedItem.description}
+                  </p>
+                </div>
+                <a
+                  href="https://t.me/finista_studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center font-montserrat text-xs tracking-[0.2em] uppercase py-3 px-6 transition-opacity hover:opacity-80"
+                  style={{ backgroundColor: "var(--gold)", color: "#1a1a1a" }}
+                >
+                  Написать в Telegram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* FOOTER */}
       <footer className="py-10 px-6" style={{ borderTop: "1px solid var(--site-accent)", backgroundColor: "var(--site-section)" }}>
