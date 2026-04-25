@@ -7,10 +7,10 @@ const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5
 
 const FABRIC_ITEMS = [
   {
-    name: "Шёлк «Пейсли»",
+    name: "1",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/e401e0fc-8574-4b6d-b820-25a86e40a131.JPEG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c0aa67de-c547-491c-bc55-8cd5fc6bf1c1.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/57a7ef7a-156b-4a71-bb24-adeecfb71c2c.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/921eeb63-f184-41cc-8911-4697fe3f5eae.jpg",
     ],
   },
   {
