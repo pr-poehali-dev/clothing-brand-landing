@@ -148,9 +148,6 @@ function FabricCard({ fabric }: { fabric: { name: string; imgs: string[] } }) {
           </div>
         )}
       </div>
-      <p className="font-montserrat text-xs text-center tracking-wide" style={{ color: "var(--site-text)", fontWeight: 300 }}>
-        {fabric.name}
-      </p>
     </div>
   );
 }
