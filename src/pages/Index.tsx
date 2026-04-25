@@ -14,76 +14,70 @@ const FABRIC_ITEMS = [
     ],
   },
   {
-    name: "Шёлк «Тигры»",
+    name: "2",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f8bb1a11-338f-4ba1-8ec2-1a720e6ae362.JPEG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/87225818-f181-43ad-83ea-28536f5b3de5.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ffb639a1-209b-4198-b110-2714fd949f68.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f81e0a05-2922-4e2a-9350-8e1ad776cf37.jpg",
     ],
   },
   {
-    name: "Шёлк «Волна»",
+    name: "3",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/d1abb960-b8ce-4710-8237-d0d0f87b002c.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/13282699-5306-47a7-8497-5cf9345f6047.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/74344729-6a0f-497e-9265-0753cfc2a0ea.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4b786874-e0bd-46f0-a9ec-417ab8e35471.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/61bb13a9-7da2-4b1c-b12d-18c8414a81d4.jpg",
     ],
   },
   {
-    name: "Шёлк «Цветы на белом»",
+    name: "4",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/33e63c2a-ddea-41dc-8de5-a8b111a7e44f.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c97fb2fe-0b43-4b11-83f9-f56c1d7a8b04.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/90dcdd7d-780f-4929-bb52-d28da75faca5.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4919661b-339a-42d5-bad1-7df134e2dd1d.jpg",
     ],
   },
   {
-    name: "Лён со стеклярусом",
+    name: "5",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/47bc8223-32a5-41a3-93b9-044951736505.JPEG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/c9b502ba-5e38-44d7-86e4-d7d775e6cda5.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/6223d7e8-2b06-461c-92d8-bb04f80da6de.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8c8f7063-f86c-4f67-8ebc-5fbe486018c6.jpg",
     ],
   },
   {
-    name: "Твид",
+    name: "6",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ecba9880-7a43-47af-bb6d-0135d13a9d30.JPEG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8805b51e-7a41-4222-aae5-9ed11f90f419.JPEG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/766f08ac-4e3e-428b-b2eb-19404be698d5.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/7bab1b47-158d-4328-935d-c08cd1e6f784.jpg",
     ],
   },
   {
-    name: "Шерсть «Птицы»",
+    name: "7",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/2b6399dd-4a4f-48a4-8e1b-c41894de4cf9.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8c64df00-91fb-411c-8233-6090d553f019.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f1dffa89-5bb0-4767-8fd6-138d8b18ce0a.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/9bb46b73-891e-43df-a276-8a01b2639365.jpg",
     ],
   },
   {
-    name: "Вискоза «Леопард»",
+    name: "8",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/e1083284-767a-4ee5-adb9-28c0ca69fdde.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4e7936c7-8455-40c8-aa57-fdd6aca69f0d.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/bc657f6b-29e3-4575-a90c-f8fa93e0935a.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/09ae3c03-256e-4d59-8ab2-018afcbdcff4.jpg",
     ],
   },
   {
-    name: "Шёлк «Цветы на чёрном»",
+    name: "9",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/5a1675c2-1812-475a-ab92-358a22a2fe9f.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3107af82-a102-4504-9aa0-89c2fbf1761d.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/cb923711-29fe-414c-99d6-0dcfa51943e6.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ea10e36e-f888-4d66-93cd-0aa3a17d9e02.jpg",
     ],
   },
   {
-    name: "Крепдешин «Маки»",
+    name: "10",
     imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8a70f2da-d9fe-4c6a-8e57-1ef0fd9dea6d.JPG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/d5001c4a-8e78-4fad-897d-14b2a52d55a4.JPG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/659d07bb-82b9-4220-b885-b831279be1f3.jpg",
     ],
   },
   {
-    name: "Хлопок «Калейдоскоп»",
-    imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
-    ],
-  },
-  {
-    name: "Off-White «Розы»",
+    name: "11",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/12b1fb97-1f3f-49b7-9dc2-dbbbf47d7312.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8039c9fc-6dac-4679-8e62-c35b1b9a9ccf.jpg",
@@ -91,7 +85,13 @@ const FABRIC_ITEMS = [
     ],
   },
   {
-    name: "Шёлк «Цветочный сад»",
+    name: "12",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
+    ],
+  },
+  {
+    name: "13",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ca7cb32a-3a1b-492d-8e55-102a2c71cf6a.PNG",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3da372fb-5e6b-41a7-800d-905c3eebaf08.PNG",
