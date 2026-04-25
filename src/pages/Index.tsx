@@ -422,15 +422,6 @@ export default function Index() {
                     {selectedItem.price as string}
                   </p>
                 )}
-                <a
-                  href="https://t.me/finista_studio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-center font-montserrat text-xs tracking-[0.2em] uppercase py-3 px-6 transition-opacity hover:opacity-80"
-                  style={{ backgroundColor: "var(--gold)", color: "#1a1a1a" }}
-                >
-                  Написать в Telegram
-                </a>
               </div>
             </div>
           </div>
