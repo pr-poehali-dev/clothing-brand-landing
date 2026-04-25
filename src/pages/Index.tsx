@@ -194,11 +194,39 @@ export default function Index() {
       {/* 2. ИЗДЕЛИЯ */}
       <section id="catalog" className="py-24 px-6" style={{ backgroundColor: "var(--site-section)" }}>
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-4">
+          <div className="text-center mb-16">
             <h2 className="font-cormorant text-5xl md:text-6xl font-light" style={{ color: "var(--site-text)" }}>
               Изделия
             </h2>
             <div className="gold-line mx-auto mt-6" />
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {[
+              { title: "Бомбер «Птицы»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/966a7200-c78f-4c68-8439-75e94407070e.jpg" },
+              { title: "Бомбер из Твида", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/96f35585-df22-490c-9c81-6d0a8601d7d6.jpg" },
+              { title: "Ватник-кимоно со стеклярусом", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/3f4eaa79-ecdf-4069-9536-6af6fe073e13.jpg" },
+              { title: "Костюм с топом «Пейсли»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/275ba942-b604-43d9-aba6-1e195fae6602.jpg" },
+              { title: "Костюм-кимоно «Леопард»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/8bebaeca-51e7-4f7e-840d-1c074e2db46f.jpg" },
+              { title: "Костюм-кимоно «Тигры»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/2037c323-c278-4909-a74e-a1f1c345e433.jpg" },
+              { title: "Платье с воланами", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/17db0d59-2f3a-4451-b66a-32aaf2d2449f.jpg" },
+              { title: "Платье с открытой спиной «Волна»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/6809e445-f2fd-407a-8755-3b7ee2ec4592.jpg" },
+              { title: "Платье-кимоно", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/65390da3-ff64-45b2-9ffc-0cf8a99925f1.jpg" },
+              { title: "Платье-кимоно короткое «Кошки»", img: "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/files/0ce25d88-546b-4031-b84d-b263f6db179d.jpg" },
+            ].map((item) => (
+              <div key={item.title} className="group flex flex-col gap-3">
+                <div className="overflow-hidden aspect-[3/4]" style={{ border: "1px solid rgba(181,144,58,0.2)" }}>
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="font-montserrat text-xs leading-snug tracking-wide" style={{ color: "var(--site-text)", fontWeight: 300 }}>
+                  {item.title}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
