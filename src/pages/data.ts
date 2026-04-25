@@ -4,21 +4,21 @@ export const ABOUT_IMAGE = "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-
 
 export const FABRIC_ITEMS = [
   {
-    name: "1",
+    name: "Красный шёлк с белыми пионами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/57a7ef7a-156b-4a71-bb24-adeecfb71c2c.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/921eeb63-f184-41cc-8911-4697fe3f5eae.jpg",
     ],
   },
   {
-    name: "2",
+    name: "Серый шёлк со знаками зодиака",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ffb639a1-209b-4198-b110-2714fd949f68.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f81e0a05-2922-4e2a-9350-8e1ad776cf37.jpg",
     ],
   },
   {
-    name: "3",
+    name: "Бирюзовый шёлк с полевыми цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/74344729-6a0f-497e-9265-0753cfc2a0ea.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4b786874-e0bd-46f0-a9ec-417ab8e35471.jpg",
@@ -26,55 +26,55 @@ export const FABRIC_ITEMS = [
     ],
   },
   {
-    name: "4",
+    name: "Фуксия с белыми хризантемами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/90dcdd7d-780f-4929-bb52-d28da75faca5.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/4919661b-339a-42d5-bad1-7df134e2dd1d.jpg",
     ],
   },
   {
-    name: "5",
+    name: "Молочный шёлк с акварельными цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/6223d7e8-2b06-461c-92d8-bb04f80da6de.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8c8f7063-f86c-4f67-8ebc-5fbe486018c6.jpg",
     ],
   },
   {
-    name: "6",
+    name: "Чёрный шёлк с персиковыми пионами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/766f08ac-4e3e-428b-b2eb-19404be698d5.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/7bab1b47-158d-4328-935d-c08cd1e6f784.jpg",
     ],
   },
   {
-    name: "7",
+    name: "Белый шёлк с абстрактным принтом",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/f1dffa89-5bb0-4767-8fd6-138d8b18ce0a.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/9bb46b73-891e-43df-a276-8a01b2639365.jpg",
     ],
   },
   {
-    name: "8",
+    name: "Шёлк с тропическими цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/bc657f6b-29e3-4575-a90c-f8fa93e0935a.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/09ae3c03-256e-4d59-8ab2-018afcbdcff4.jpg",
     ],
   },
   {
-    name: "9",
+    name: "Белый шёлк с красными розами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/cb923711-29fe-414c-99d6-0dcfa51943e6.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ea10e36e-f888-4d66-93cd-0aa3a17d9e02.jpg",
     ],
   },
   {
-    name: "10",
+    name: "Чёрный шёлк с садовыми цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/659d07bb-82b9-4220-b885-b831279be1f3.jpg",
     ],
   },
   {
-    name: "11",
+    name: "Off-white с кремовыми розами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/12b1fb97-1f3f-49b7-9dc2-dbbbf47d7312.jpg",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/8039c9fc-6dac-4679-8e62-c35b1b9a9ccf.jpg",
@@ -82,13 +82,13 @@ export const FABRIC_ITEMS = [
     ],
   },
   {
-    name: "12",
+    name: "Бежевый шёлк с цветочным узором",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
     ],
   },
   {
-    name: "13",
+    name: "Чёрный шёлк с разноцветными цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ca7cb32a-3a1b-492d-8e55-102a2c71cf6a.PNG",
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3da372fb-5e6b-41a7-800d-905c3eebaf08.PNG",

@@ -31,6 +31,9 @@ function FabricCard({ fabric }: { fabric: { name: string; imgs: string[] } }) {
           </div>
         )}
       </div>
+      <p className="font-montserrat text-xs text-center leading-snug tracking-wide" style={{ color: "var(--site-text)", fontWeight: 300 }}>
+        {fabric.name}
+      </p>
     </div>
   );
 }
@@ -199,7 +202,7 @@ export default function Index() {
             </h2>
             <div className="gold-line mx-auto mt-6" />
             <p className="font-montserrat text-sm mt-8 max-w-xl mx-auto" style={{ color: "var(--site-text)", fontWeight: 300, opacity: 0.7 }}>
-              Ткани из 100% натурального шёлка
+              100% натуральный шёлк
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
