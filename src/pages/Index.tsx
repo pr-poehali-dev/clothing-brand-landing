@@ -365,12 +365,30 @@ export default function Index() {
             <div className="flex flex-col md:flex-row">
               {/* Левая часть — фото */}
               <div className="md:w-1/2 flex-shrink-0">
-                <div className="aspect-[3/4] overflow-hidden">
+                <div className="relative aspect-[3/4] overflow-hidden">
                   <img
                     src={[selectedItem.img, ...selectedItem.gallery][activePhoto]}
                     alt={selectedItem.title}
                     className="w-full h-full object-cover"
                   />
+                  {[selectedItem.img, ...selectedItem.gallery].length > 1 && (
+                    <>
+                      <button
+                        className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center transition-opacity hover:opacity-70"
+                        style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
+                        onClick={() => setActivePhoto(i => (i - 1 + [selectedItem.img, ...selectedItem.gallery].length) % [selectedItem.img, ...selectedItem.gallery].length)}
+                      >
+                        <Icon name="ChevronLeft" size={18} style={{ color: "#fff" }} />
+                      </button>
+                      <button
+                        className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center transition-opacity hover:opacity-70"
+                        style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
+                        onClick={() => setActivePhoto(i => (i + 1) % [selectedItem.img, ...selectedItem.gallery].length)}
+                      >
+                        <Icon name="ChevronRight" size={18} style={{ color: "#fff" }} />
+                      </button>
+                    </>
+                  )}
                 </div>
                 {selectedItem.gallery.length > 0 && (
                   <div className="flex gap-2 p-3 overflow-x-auto">
