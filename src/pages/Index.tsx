@@ -174,7 +174,7 @@ export default function Index() {
               <div className="mb-6 pl-4 border-l" style={{ borderColor: "var(--gold)" }}>
                 <p className="font-montserrat text-xs tracking-[0.15em] uppercase mb-2" style={{ color: "var(--site-text)", fontWeight: 400 }}>Эксклюзивный пошив</p>
                 <p className="font-montserrat text-sm leading-loose" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
-                  Если вы хотите подчеркнуть свою индивидуальность, мы предлагаем формат персональной работы. Вы выбираете понравившуюся ткань и модель из нашего ассортимента по уже отработанным лекалам, а мы, опираясь на наши безупречно отработанные лекала, адаптируем изделие под ваши параметры.
+                  Если вы цените уникальность, мы предлагаем оформить персональный заказ. Вы выбираете ткань и модель из нашей коллекции, а мы создаём изделие по уже отработанным лекалам, адаптируя его под ваши индивидуальные параметры.
                 </p>
               </div>
               <p className="font-montserrat text-sm leading-loose mb-10" style={{ color: "var(--site-muted)", fontWeight: 300 }}>
