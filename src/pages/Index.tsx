@@ -245,7 +245,7 @@ export default function Index() {
             </div>
             <div className="flex-1 w-full">
               <video
-                src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/IMG_2757.mp4"
+                src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/2b302e33-a386-4985-8ee1-95f0f674a786.mp4"
                 autoPlay
                 muted
                 loop
