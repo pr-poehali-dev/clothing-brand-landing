@@ -71,6 +71,8 @@ export const FABRIC_ITEMS = [
     name: "Чёрный шёлк с садовыми цветами",
     imgs: [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/659d07bb-82b9-4220-b885-b831279be1f3.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ca7cb32a-3a1b-492d-8e55-102a2c71cf6a.PNG",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3da372fb-5e6b-41a7-800d-905c3eebaf08.PNG",
     ],
   },
   {
@@ -87,13 +89,7 @@ export const FABRIC_ITEMS = [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
     ],
   },
-  {
-    name: "Чёрный шёлк с разноцветными цветами",
-    imgs: [
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/ca7cb32a-3a1b-492d-8e55-102a2c71cf6a.PNG",
-      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/3da372fb-5e6b-41a7-800d-905c3eebaf08.PNG",
-    ],
-  },
+
 ];
 
 export const NAV_ITEMS = [
