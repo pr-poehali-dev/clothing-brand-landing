@@ -223,24 +223,37 @@ export default function Index() {
             <div className="gold-line mx-auto mt-6" />
           </div>
 
-          <div className="flex flex-col gap-8 max-w-xl mx-auto">
-            {[
-              { icon: "Box", title: "Коробка из плотного белого картона" },
-              { icon: "Feather", title: "Шуршащая декоративная бумага тишью" },
-              { icon: "ShoppingBag", title: "Мягкий и приятный на ощупь мешочек с логотипом из хлопкового муслина" },
-              { icon: "Sparkles", title: "Карта Таро с предсказанием" },
-              { icon: "Gift", title: "Готово к подарку. Идеальна с первой секунды." },
-            ].map((item) => (
-              <div key={item.title} className="flex items-start gap-6">
-                <div
-                  className="w-10 h-10 flex-shrink-0 flex items-center justify-center border"
-                  style={{ borderColor: "rgba(181,144,58,0.35)" }}
-                >
-                  <Icon name={item.icon} fallback="Package" size={16} style={{ color: "var(--gold)" }} />
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="flex flex-col gap-8 flex-1">
+              {[
+                { icon: "Box", title: "Коробка из плотного белого картона" },
+                { icon: "Feather", title: "Шуршащая декоративная бумага тишью" },
+                { icon: "ShoppingBag", title: "Мягкий и приятный на ощупь мешочек с логотипом из хлопкового муслина" },
+                { icon: "Sparkles", title: "Карта Таро с предсказанием" },
+                { icon: "Gift", title: "Готово к подарку. Идеальна с первой секунды." },
+              ].map((item) => (
+                <div key={item.title} className="flex items-start gap-6">
+                  <div
+                    className="w-10 h-10 flex-shrink-0 flex items-center justify-center border"
+                    style={{ borderColor: "rgba(181,144,58,0.35)" }}
+                  >
+                    <Icon name={item.icon} fallback="Package" size={16} style={{ color: "var(--gold)" }} />
+                  </div>
+                  <p className="font-montserrat text-sm leading-loose pt-2" style={{ color: "var(--site-text)", fontWeight: 300 }}>{item.title}</p>
                 </div>
-                <p className="font-montserrat text-sm leading-loose pt-2" style={{ color: "var(--site-text)", fontWeight: 300 }}>{item.title}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="flex-1 w-full">
+              <video
+                src="https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/IMG_2757.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full rounded-sm object-cover"
+                style={{ maxHeight: "560px" }}
+              />
+            </div>
           </div>
         </div>
       </section>
