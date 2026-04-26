@@ -89,6 +89,13 @@ export const FABRIC_ITEMS = [
       "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/069c3b8d-8438-49b5-93d1-104944efabae.jpg",
     ],
   },
+  {
+    name: "Пудровый шёлк «Ботанический сад»",
+    imgs: [
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/b945dcb1-3d80-4ab1-b9b2-04acc8436631.jpg",
+      "https://cdn.poehali.dev/projects/c1fcd3a1-4d01-4e07-8386-e5875083c9b5/bucket/fff9ee24-dc91-4785-a7a3-41246a4410e1.jpg",
+    ],
+  },
 
 ];
 
